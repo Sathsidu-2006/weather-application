@@ -74,15 +74,28 @@ body{
 
 .sub-container{
     display: flex;
+    flex-direction: column;       /* Arrange elements horizontally */
     justify-content: center;
+    align-items: center;       /* Align elements vertically */
     padding: 10px;
     border: 2px solid rgb(155, 153, 153);
     border-radius: 10px;
+    height: 200px;
+    gap: 20px;
 }
 
 .sub-container:hover{
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.64);
     border: 1px solid rgb(247, 243, 243);
+}
+
+.icon{
+    height: 100px;
+    width: auto;
+}
+
+.heading{
+    font-size: 40px;
 }
 

@@ -18,9 +18,8 @@ function fetchWeather(){
         </div>
 
         <div class="sub-container">
-            
-            <p> Example text</p>
-            <p> Example text</p>
+            <img src="assets/map.png" alt="" class="icon-map">
+            <p>${data.location.name}, ${data.location.region}</p>
         </div>
 
         <div class="sub-container">

@@ -5,12 +5,20 @@
 }
 
 body{
-    background-color: black;
+    background-image: url("https://c0.wallpaperflare.com/preview/273/564/913/storm-sky-cloud-lightning.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+
 }
 .nav-container{
-    height: 100px;
+    height: 90px;
     padding: 20px;
     display: flex;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255, .2);
 
 }
 
@@ -60,16 +68,17 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
-    padding: 20px 20px;
-    border: 1px solid rgba(92, 86, 86, 0.473);
-    margin: 5%;
-    border-radius: 20px;
+    /* padding: 20px 20px; */
+    /* border: 1px solid rgba(255,255,255, .2); */
+    margin: 5% 5% 0 5%;
+    /* border-radius: 20px;
+    backdrop-filter: blur(10px); */
 
 }
 
-.main-container:hover{
+/* .main-container:hover{
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.64);
-}
+} */
 
 .sub-container{
     display: flex;
@@ -79,15 +88,16 @@ body{
     padding: 10px;
     border: 2px solid rgba(155, 153, 153, 0.229);
     border-radius: 10px;
-    height: 200px;
+    height: 300px;
     width: 100%;
     gap: 20px;
+    backdrop-filter: blur(20px);
 }
 
 .sub-container:hover{
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.64);
-    border: 1px solid rgb(247, 243, 243);
+    border: 1px solid rgb(255,255,255 .2);
 }
 
 .icon{
@@ -100,6 +110,39 @@ body{
 }
 
 .icon-map{
-    height: 70px;
+    height: 100px;
 }
 
+.detal-container{
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    padding: 20px 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    
+}
+
+.detail-sub-container{
+    display: flex;
+    flex-direction: column;       /* Arrange elements horizontally */
+    justify-content: center;
+    align-items: center;       /* Align elements vertically */
+    padding: 10px;
+    border: 2px solid rgba(155, 153, 153, 0.229);
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+    gap: 20px;
+    backdrop-filter: blur(20px);
+}
+
+.detail-sub-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.64);
+    border: 1px solid rgb(255,255,255 .2);
+}

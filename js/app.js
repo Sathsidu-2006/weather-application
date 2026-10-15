@@ -9,15 +9,17 @@ function fetchWeather(){
     console.log(data);
 
     let divContainer = document.getElementById("divContainer");
+    let divDetail = document.getElementById("divDetail");
 
     let body = `
         <div class="sub-container">
-            <h5 class ="heading">Weather</h5>
+            <h5 class ="heading">Today's Weather</h5>
             <img src="${data.current.condition.icon}" alt="" class="icon">
             <p>${data.current.condition.text}</p>
         </div>
 
         <div class="sub-container">
+            <h5 class ="heading">Location</h5>
             <img src="assets/map.png" alt="" class="icon-map">
             <p>${data.location.name}, ${data.location.region}</p>
         </div>
@@ -27,13 +29,31 @@ function fetchWeather(){
             <p> Example text</p>
         </div>
 
-        <div class="sub-container">
+    
+    `
+
+    let divTwo = `
+        <div class="detail-sub-container">
+            
+            <p> Example text</p>
+        </div>
+        <div class="detail-sub-container">
+            
+            <p> Example text</p>
+        </div>
+        <div class="detail-sub-container">
+            
+            <p> Example text</p>
+        </div>
+        <div class="detail-sub-container">
             
             <p> Example text</p>
         </div>
     
     `
 
+
+    divDetail.innerHTML=divTwo;
     divContainer.innerHTML=body;
 
     });
